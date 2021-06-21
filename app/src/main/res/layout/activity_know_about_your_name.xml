@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="KnowAboutYourName"
+    android:background="@drawable/backs">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardviewPage1"
+        android:layout_width="wrap_content"
+        android:layout_height="345dp"
+        android:layout_alignParentBottom="true"
+        android:foregroundGravity="bottom"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/backone"
+            android:hint="  Enter your name"
+            android:padding="5dp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radiog"
+            android:layout_width="378dp"
+            android:layout_height="357dp">
+
+            <RadioButton
+                android:id="@+id/man"
+                android:layout_width="150dp"
+                android:layout_height="160dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/man"
+                android:checked="true"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp" />
+
+            <RadioButton
+                android:id="@+id/woman"
+                android:layout_width="149dp"
+                android:layout_height="160dp"
+                android:layout_marginLeft="205dp"
+                android:layout_marginTop="-160dp"
+                android:background="@drawable/woman"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="250dp"
+
+            android:layout_height="50dp"
+            android:layout_marginLeft="68dp"
+            android:layout_marginTop="280dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/backone"
+            android:text="know about yourself"
+            android:textStyle="bold" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
